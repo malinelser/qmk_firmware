@@ -66,20 +66,21 @@ SC033::Send {7} ; ,
 SC034::Send {8} ; .
 SC035::Send {9} ; -
 SC031::SendInput {SC00C} ; caps+n blir +
-SC012::Send {PgUp} ; e
 SC013::Send {Ctrl Down}r{Ctrl Up}
 SC01E::Send {Ctrl Down}a{Ctrl Up}
 SC01F::Send {Ctrl Down}s{Ctrl Up}
-SC020::Send {PgDn} ; d
-SC021::Send {Ctrl Down}f{Ctrl Up}
-SC02C::Send {Ctrl Down}z{Ctrl Up}
+SC020::Send {Ctrl Down}c{Ctrl Up} ; d
+g::Send {Ctrl Down}f{Ctrl Up}
+SC02C::Send {Ctrl Down}z{Ctrl Up} ; z
+q::Send {Ctrl Down}z{Ctrl Up} ; z
 SC02D::Send {Ctrl Down}x{Ctrl Up}
 SC02E::Send {Ctrl Down}c{Ctrl Up}
 SC02F::Send {Ctrl Down}v{Ctrl Up}
 SC030::Send {LWin Down}v{LWin Up} ; Esc+b blir win+v
+SC021::Send {LWin Down}v{LWin Up} ; Esc+f blir win+v
 w::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
-q::Send {LWin Down}{Shift Down}t{Shift Up}{LWin Up}
-y::Send {Ctrl Down}r{Ctrl Up}
+e::Send {LWin Down}{Shift Down}t{Shift Up}{LWin Up}
+y::Send {Ctrl Down}y{Ctrl Up}
 t::Send {LWin Down}{SC00F}{LWin Up}
 #If
 

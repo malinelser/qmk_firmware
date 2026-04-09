@@ -38,7 +38,7 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
         // Left half
             KC_ESC,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,
             KC_TAB,     KC_Z,       KC_B,       KC_X,       KC_G,       KC_TAB,
-            KC_LCTL,    KC_NO,      KC_NO,      KC_MPLY,    KC_VOLD,    KC_VOLU,
+            KC_LCTL,    KC_NO,      KC_NO,      KC_C,       KC_V,    KC_VOLU,
             KC_LSFT,    SE_LABK,    SE_RABK,    SE_PIPE,    KC_V,       KC_B,       KC_MPLY,
                                     KC_LGUI,    KC_LALT,    KC_LCTL,    KC_LALT,     KC_SPC,
 
