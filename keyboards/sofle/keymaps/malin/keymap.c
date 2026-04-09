@@ -1,6 +1,18 @@
 
 #include QMK_KEYBOARD_H
 #include "keymap.h"
+#include "process_combo.h"
+
+// Combos
+enum combo_events {
+    COMBO_JKL_ENTER,
+    COMBO_LENGTH  // always last
+};
+const uint16_t PROGMEM jkl_combo[] = {KC_J, KC_K, KC_L, COMBO_END};
+combo_t key_combos[COMBO_LENGTH] = {
+    [COMBO_JKL_ENTER] = COMBO(jkl_combo, KC_ENT)
+};
+
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -25,7 +37,7 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
 
         // Left half
             KC_ESC,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,
-            KC_TAB,     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,
+            KC_TAB,     KC_Z,       KC_B,       KC_X,       KC_G,       KC_TAB,
             KC_LCTL,    KC_NO,      KC_NO,      KC_MPLY,    KC_VOLD,    KC_VOLU,
             KC_LSFT,    SE_LABK,    SE_RABK,    SE_PIPE,    KC_V,       KC_B,       KC_MPLY,
                                     KC_LGUI,    KC_LALT,    KC_LCTL,    KC_LALT,     KC_SPC,
