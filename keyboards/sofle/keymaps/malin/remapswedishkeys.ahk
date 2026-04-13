@@ -7,6 +7,7 @@ SendMode Input
 SetKeyDelay, -1, -1
 SetMouseDelay, -1
 SetCapsLockState, AlwaysOff   ; disable native CapsLock toggle
+GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 
 ; --- Alt + key mappings ---
 ;!SC00D::´
@@ -75,14 +76,22 @@ SC02C::Send {Ctrl Down}z{Ctrl Up} ; z
 q::Send {Ctrl Down}z{Ctrl Up} ; z
 SC02D::Send {Ctrl Down}x{Ctrl Up}
 SC02E::Send {Ctrl Down}c{Ctrl Up}
-SC02F::Send {Ctrl Down}v{Ctrl Up}
+SC02F::Send {LWin Down}v{LWin Up} ; Esc+v blir win+v
 SC030::Send {LWin Down}v{LWin Up} ; Esc+b blir win+v
-SC021::Send {LWin Down}v{LWin Up} ; Esc+f blir win+v
+SC021::Send {Ctrl Down}v{Ctrl Up} ; esc+f blir ctrl+v
 w::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
 e::Send {LWin Down}{Shift Down}t{Shift Up}{LWin Up}
 y::Send {Ctrl Down}y{Ctrl Up}
-t::Send {LWin Down}{SC00F}{LWin Up}
+;t::AltTabMenu
 #If
+
+;!Enter::Send {Alt up}  ; Release the Alt key, which activates the selected window.
+;!Esc::Send {Alt up}  ; When the menu is cancelled, release the Alt key automatically
+;#IfWinExist ahk_group AltTabWindow
+;~*Esc::Send {Alt up}  ; When the menu is cancelled, release the Alt key automatically.
+;*Esc::Send {Esc}{Alt up}  ; Without tilde (~), Escape would need to be sent.
+;#If
+
 
 ; ------------- Make SC056 a pure modifier key OBS DET SOM INTE GER TECKEN LIGGER PÅ DENNA MODIFIER
 SC056::Return
