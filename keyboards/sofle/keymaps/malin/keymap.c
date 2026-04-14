@@ -19,11 +19,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_LGUI,    KC_2,       KC_3,       KC_4,       KC_LGUI,
             KC_ESC,     KC_1,       KC_2,       KC_3,       TG(2),      KC_5,
-            KC_B,       KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,
-            KC_Z,       KC_A,       KC_S,       KC_D,       KC_F,       KC_G,         KC_MPLY,
-                                    KC_X,       KC_C,       KC_V,       KC_LALT,      KC_SPC,
+            SE_AT,      KC_Q,       KC_B,       KC_E,       KC_T,       KC_G,
+            SE_AT,      KC_F,       KC_S,       KC_A,       KC_W,       KC_R,
+            SE_AT,      KC_D,       KC_Z,       KC_X,       KC_C,       KC_V,         KC_MPLY,
+                                    KC_LGUI,    KC_LSFT,    KC_LCTL,    KC_LALT,      KC_SPC,
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       KC_GRV,
@@ -36,11 +36,11 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
     [1] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,
-            KC_ESC,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,
-            KC_LCTL,    KC_Z,       KC_B,       KC_X,       KC_G,       KC_TAB,  
-            KC_LSFT,    KC_NO,      KC_NO,      KC_C,       KC_V,       KC_VOLU,      KC_MPLY,
-                                    SE_RABK,    SE_PIPE,    KC_V,       KC_LCTL,      KC_SPC,
+            KC_ESC,     KC_F1,      KC_F2,      KC_F3,      TG(2),      KC_F5,
+            KC_LCTL,    KC_Z,       KC_W,       KC_X,       KC_TAB,     KC_R,  
+            KC_LSFT,    KC_NO,      KC_F,       KC_D,       KC_B,       KC_G,
+            SE_AT,      SE_RABK,    SE_PIPE,    KC_V,       KC_E,       KC_T,         KC_MPLY,
+                                    SE_RABK,    SE_PIPE,    KC_V,       KC_LALT,      KC_LCTL,
 
         // Right half
             KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,
@@ -53,10 +53,10 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
     [2] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_LGUI,    KC_2,       KC_3,       KC_4,       KC_LGUI,
             KC_ESC,     KC_1,       KC_2,       KC_3,       TG(2),      KC_5,
-            KC_B,       KC_Q,       G(S(KC_S)), LCTL(KC_Z), LCTL(KC_Y), KC_DEL,
-            KC_Z,       KC_A,       KC_S,       LCTL(KC_C), LCTL(KC_V), LCTL(KC_X),   KC_MPLY,
+            SE_AT,      KC_Q,       G(S(KC_S)), LCTL(KC_Z), KC_DEL,     LCTL(KC_Y),
+            SE_AT,      KC_A,       KC_S,       LCTL(KC_C), LCTL(KC_V), LCTL(KC_X),
+            SE_AT,      KC_X,       LGUI(KC_D), KC_ENT,     LGUI(KC_D), KC_ENT,       KC_MPLY,
                                     KC_X,       LGUI(KC_D), KC_ENT,     KC_LALT,      KC_LCTL,
 
         // Right half
