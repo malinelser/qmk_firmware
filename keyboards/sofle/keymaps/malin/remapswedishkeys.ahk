@@ -21,7 +21,8 @@ GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 !u::SendInput {Text}<
 !i::SendInput {Text}>
 !ä::SendInput {Text}?
-!p::SendInput {Text}
+!p::SendInput {Text}!
+!å::SendInput {Text}|
 !m::Send {/}
 !SC01B::Send {\}
 !n::Send {Shift Down}0{Shift Up} ; Alt+n blir =
@@ -29,7 +30,20 @@ GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 !.::SendInput {Text}\
 !-::SendInput {Text}^
 !'::SendInput {Text}&
-!a::Send {Ctrl Down}a{Ctrl Up}
+!e::Send {Ctrl Down}z{Ctrl Up}
+!t::Send {Ctrl Down}y{Ctrl Up}
+!g::Send {Ctrl Down}x{Ctrl Up}
+!s::Send {Ctrl Down}s{Ctrl Up}
+!a::Send {Ctrl Down}c{Ctrl Up}
+!w::Send {Ctrl Down}v{Ctrl Up}
+!r::SendInput {SC01C} ; enter
+!c::SendInput {SC00E} ; blir backspace
+!v::SendInput {SC153} ; blir delete
+!b::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
+
+
+
+
 
 ; --- Ctrl + key mappings ---
 ;^SC00D::`
