@@ -63,7 +63,7 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
             KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       SE_AA,
             KC_H,       KC_J,       KC_K,       KC_L,       SE_OE,      SE_AE,
-KC_MFFD,    KC_N,       KC_M,       KC_COMM,    KC_DOT,     SE_MINS,    KC_NUHS,
+KC_MFFD,    KC_N,       KC_M,       KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,
 KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
     ),
 
