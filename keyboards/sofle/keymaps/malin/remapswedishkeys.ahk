@@ -37,9 +37,10 @@ GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 !a::Send {Ctrl Down}c{Ctrl Up}
 !w::Send {Ctrl Down}v{Ctrl Up}
 !r::SendInput {SC01C} ; enter
-!c::SendInput {SC00E} ; blir backspace
-!v::SendInput {SC153} ; blir delete
+!x::SendInput {SC00E} ; blir backspace
+!c::SendInput {SC153} ; blir delete
 !b::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
+!v::Send {LWin Down}v{LWin Up}
 
 
 

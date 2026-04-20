@@ -53,10 +53,10 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
     [2] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_1,       KC_2,       KC_3,       TG(2),      KC_5,
+            KC_ESC,     KC_1,       KC_2,       LALT(KC_F), TG(2),      LCTL(KC_NUHS),
             SE_AT,      KC_Q,       G(S(KC_S)), LCTL(KC_Z), LCTL(KC_Y), LCTL(KC_X),
-            SE_AT,      LCTL(KC_F), LCTL(KC_S), LCTL(KC_C), LCTL(KC_V), KC_ENT,
-            SE_AT,      LCTL(KC_A), LGUI(KC_D), LGUI(KC_D), KC_BSPC,    KC_DEL,       KC_MPLY,
+            SE_AT,      LCTL(KC_A), LCTL(KC_S), LCTL(KC_C), LCTL(KC_V), KC_ENT,
+            SE_AT,      LCTL(KC_F), LGUI(KC_D), KC_BSPC,    KC_DEL,     LGUI(KC_V),   KC_MPLY,
                                     KC_LGUI,    KC_LSFT,    KC_ESC,     KC_LALT,      KC_LCTL,
 
         // Right half
@@ -64,7 +64,7 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
             KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       SE_AA,
             KC_H,       KC_J,       KC_K,       KC_L,       SE_OE,      SE_AE,
 KC_MFFD,    KC_N,       KC_M,       KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,
-KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
+KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_ENT
     ),
 
 };
