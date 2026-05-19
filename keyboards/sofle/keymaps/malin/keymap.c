@@ -61,10 +61,10 @@ KC_CAPS,     MO(1),     KC_LSFT,    KC_LCTL,    KC_LGUI
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
-            KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       SE_AA,
-            KC_H,       KC_J,       KC_K,       KC_L,       SE_OE,      SE_AE,
-KC_MFFD,    KC_N,       KC_M,       KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,
-KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_ENT
+            LCTL(KC_X), LCTL(KC_Y), LCTL(KC_Z), G(S(KC_S)), KC_P,       SE_AA,
+            KC_ENT,     LCTL(KC_V), LCTL(KC_C), LCTL(KC_S), LCTL(KC_A), SE_AE,
+KC_MFFD,    LGUI(KC_V), KC_DEL,     KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,
+KC_LCTL,    KC_LALT,    KC_ESC,     KC_LCTL,    KC_ENT
     ),
 
 };
