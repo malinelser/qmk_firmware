@@ -23,9 +23,9 @@ GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 !ä::SendInput {Text}?
 !p::SendInput {Text}!
 !å::SendInput {Text}|
-!m::Send {/}
-!SC01B::Send {\}
 !n::Send {Shift Down}0{Shift Up} ; Alt+n blir =
+!SC01B::Send {\}
+!m::Send {/}
 !,::Send {Shift Down}2{Shift Up}  ; alt+, blir "
 !.::SendInput {Text}\
 !-::SendInput {Text}^
@@ -84,20 +84,20 @@ SC034::Send {8} ; .
 SC035::Send {9} ; -
 SC031::SendInput {SC00C} ; caps+n blir +
 r::Send {Ctrl Down}r{Ctrl Up}
-d::Send {Ctrl Down}a{Ctrl Up}
+d::Send {LWin Down}d{LWin Up}
 s::Send {Ctrl Down}s{Ctrl Up}
-g::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
-SC02C::Send {Ctrl Down}z{Ctrl Up} ; z
-q::Send {Ctrl Down}z{Ctrl Up} ;
-x::Send {Ctrl Down}x{Ctrl Up}
+g::Send {Ctrl Down}z{Ctrl Up}
+SC02C::Send {Ctrl Down}a{Ctrl Up} ; z
+q::Send {LWin Down}{Shift Down}t{Shift Up}{LWin Up}
+x::Send {LWin Down}d{LWin Up}
 a::Send {Ctrl Down}c{Ctrl Up}
-c::Send {Ctrl Down}c{Ctrl Up} ;
+c::Send {Ctrl Down}x{Ctrl Up} ;
 v::Send {LWin Down}v{LWin Up} ; Esc+v blir win+v
-b::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
-e::Send {LWin Down}{Shift Down}t{Shift Up}{LWin Up}
+b::Send {Ctrl Down}y{Ctrl Up}
+e::Send {Ctrl Down}v{Ctrl Up}
 y::Send {Ctrl Down}y{Ctrl Up}
 f::Send {Ctrl Down}f{Ctrl Up}
-w::Send {Ctrl Down}v{Ctrl Up}
+w::Send {LWin Down}{Shift Down}s{Shift Up}{LWin Up}
 ;t::AltTabMenu
 #If
 
