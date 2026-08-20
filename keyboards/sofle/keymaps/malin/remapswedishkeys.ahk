@@ -9,6 +9,15 @@ SetMouseDelay, -1
 SetCapsLockState, AlwaysOff   ; disable native CapsLock toggle
 GroupAdd AltTabWindow, ahk_class MultitaskingViewFrame  ; Windows 10
 
+; --- scroll up
+F11::Wheelup
+
+; --- scroll down 
+F12::WheelDown
+
+; --- F13 as Double Click ---
+F13::Click 2
+
 ; --- Alt + key mappings ---
 ;!SC00D::´
 !ö::SendInput {Text}~

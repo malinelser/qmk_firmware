@@ -2,3 +2,4 @@ COMBO_ENABLE = yes
 TRI_LAYER_ENABLE = yes
 OLED_ENABLE = yes
 SRC += oled.c
+MOUSEKEY_ENABLE = yes
