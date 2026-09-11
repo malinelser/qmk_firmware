@@ -19,11 +19,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_1,       KC_2,       KC_3,       KC_4,       KC_5,
-            SE_AT,      KC_Q,       KC_W,       KC_G,       KC_B,       KC_C,
-            SE_AT,      KC_Z,       MS_WHLU,    KC_F13,     MS_BTN1,    MS_BTN2,
-            TG(2),      MS_WHLD,    KC_X,       KC_D,       KC_T,       KC_V,         KC_MPLY,
-                                    KC_LGUI,    KC_LSFT,    KC_LCTL,    TG(2),        TG(2),
+            KC_ESC,        KC_1,       KC_2,       KC_3,       KC_4,       KC_5,
+            SE_AT,         KC_Q,       KC_W,       MS_WHLU,    MS_WHLD,    LCTL(KC_X),
+            LCTL(KC_NUHS), KC_Z,       MS_WHLU,    LCTL(KC_Z), LCTL(KC_Y), MS_BTN2,
+            LALT(KC_F),    MS_WHLD,    KC_X,       KC_D,       KC_T,       KC_V,         KC_MPLY,
+                                       KC_LGUI,    KC_LSFT,    KC_LALT,    KC_LCTL,      TG(2),
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
@@ -40,7 +40,7 @@ KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
             KC_LCTL,    KC_Z,       KC_W,       KC_X,       KC_TAB,     KC_R,  
             KC_LSFT,    KC_NO,      KC_F,       KC_D,       KC_B,       KC_G,
             TG(2),      SE_RABK,    SE_PIPE,    KC_V,       KC_TAB,     KC_T,         KC_MPLY,
-                                    SE_RABK,    SE_PIPE,    KC_V,       TG(2),        TG(2),
+                                    SE_RABK,    SE_PIPE,    KC_V,       KC_LCTL,      TG(2),
 
         // Right half
             KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,
@@ -53,11 +53,11 @@ KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
     [2] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,        LALT(KC_F), MS_WHLU,    LALT(KC_F), LCTL(KC_NUHS), MS_BTN2,
-            SE_AT,         MS_WHLD,    G(S(KC_S)), LCTL(KC_Z), LCTL(KC_Y),    LCTL(KC_X),
-            LCTL(KC_NUHS), LCTL(KC_A), LCTL(KC_S), LCTL(KC_C), LCTL(KC_V),    KC_ENT,
-            TG(2),         LCTL(KC_F), LGUI(KC_D), KC_BSPC,    KC_DEL,        LGUI(KC_V),   KC_MPLY,
-                                       KC_LGUI,    KC_LSFT,    KC_ESC,        TG(2),        TG(2),
+            KC_ESC,        LCTL(KC_NUHS), LALT(KC_F),  LCTL(KC_NUHS), LALT(KC_F),    LCTL(KC_X),
+            SE_AT,         MS_WHLD,       G(S(KC_S)),  LCTL(KC_Z),    LCTL(KC_Y),    LCTL(KC_A),
+            LCTL(KC_NUHS), LCTL(KC_A),    LCTL(KC_S),  LCTL(KC_C),    LCTL(KC_V),    KC_ENT,
+            LALT(KC_F),    LCTL(KC_F),    LGUI(KC_D),  KC_BSPC,       KC_DEL,        LGUI(KC_V),   KC_MPLY,
+                                          TG(2),       KC_LSFT,       KC_LALT,       KC_ESC,       KC_LCTL,
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
@@ -74,4 +74,3 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
-
