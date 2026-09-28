@@ -40,7 +40,7 @@ KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
             KC_LCTL,    KC_Z,       KC_W,       KC_X,       KC_TAB,     KC_R,  
             KC_LSFT,    KC_NO,      KC_F,       KC_D,       KC_B,       KC_G,
             TG(2),      SE_RABK,    SE_PIPE,    KC_V,       KC_TAB,     KC_T,         KC_MPLY,
-                                    TG(2),      SE_PIPE,    KC_V,       KC_ESC,        KC_LCTL,
+                                    TG(2),      SE_PIPE,    KC_V,       KC_ESC,       KC_LCTL,
 
         // Right half
             KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,
@@ -53,11 +53,11 @@ KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
     [2] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,        LALT(KC_F),  LCTL(KC_NUHS), LCTL(KC_Z),   LCTL(KC_Y),    LCTL(KC_X),
-            SE_AT,         MS_WHLD,     MS_WHLU,       KC_F13,       MS_BTN1,       LCTL(KC_A),
-            LCTL(KC_NUHS), MS_WHLD,     LCTL(KC_S),    LCTL(KC_C),   LCTL(KC_V),    KC_ENT,
-            G(S(KC_S)),    LCTL(KC_F),  LGUI(KC_D),    KC_BSPC,      KC_DEL,        LGUI(KC_V),    KC_MPLY,
-                                        TG(2),         KC_LSFT,      KC_LALT,       KC_ESC,        KC_LCTL,
+            KC_ESC,        LALT(KC_F),  LCTL(KC_NUHS), KC_LALT,         KC_TAB,           LCTL(KC_X),
+            SE_AT,         MS_WHLD,     MS_WHLU,       LCTL(KC_Z),      LCTL(KC_Y),       LCTL(KC_A),
+            LCTL(KC_NUHS), MS_WHLD,     LCTL(KC_S),    LCTL(KC_C),      LCTL(KC_V),       KC_ENT,
+            G(S(KC_S)),    LCTL(KC_F),  LGUI(KC_D),    KC_BSPC,         KC_DEL,           LGUI(KC_V),    KC_MPLY,
+                                        TG(2),         KC_LALT,         KC_LCTL,          KC_ESC,        KC_TAB,
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
