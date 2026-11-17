@@ -19,11 +19,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,     KC_1,       KC_2,       KC_3,       KC_4,       KC_5,
-            SE_AT,      KC_Q,       KC_W,       KC_G,       KC_B,       KC_C,
-            SE_AT,      KC_Z,       MS_WHLU,    KC_F13,     MS_BTN1,    MS_BTN2,
-            SE_AT,      MS_WHLD,    KC_X,       KC_D,       KC_T,       KC_V,          KC_MPLY,
-                                    TG(2),      KC_LSFT,    KC_LCTL,    KC_ESC,        KC_LCTL,
+            KC_ESC,        KC_LALT,        LALT(KC_F),    LCTL(KC_NUHS),   LALT(KC_LSFT),    KC_SPC,
+            KC_LSFT,       G(S(KC_T)),     G(S(KC_S)),    LCTL(KC_Z),      LCTL(KC_Y),       LCTL(KC_A),
+            TG(2),         MS_WHLD,        LCTL(KC_S),    LCTL(KC_C),      LCTL(KC_V),       KC_ENT,
+            G(S(KC_S)),    LCTL(KC_F),     LGUI(KC_D),    LCTL(KC_A),      KC_DEL,           LGUI(KC_V),    KC_MPLY,
+                                           LGUI(KC_L),    KC_LALT,         KC_LCTL,          KC_ESC,        KC_TAB,
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
@@ -53,11 +53,11 @@ KC_CAPS,    MO(1),      KC_LSFT,    KC_LCTL,    KC_LGUI
     [2] = LAYOUT_SPLIT_WRAPPER(
 
         // Left half
-            KC_ESC,        LALT(KC_F),  LCTL(KC_NUHS), KC_LALT,         KC_TAB,           LCTL(KC_X),
-            SE_AT,         MS_WHLD,     MS_WHLU,       LCTL(KC_Z),      LCTL(KC_Y),       LCTL(KC_A),
-            LCTL(KC_NUHS), MS_WHLD,     LCTL(KC_S),    LCTL(KC_C),      LCTL(KC_V),       KC_ENT,
-            G(S(KC_S)),    LCTL(KC_F),  LGUI(KC_D),    KC_BSPC,         KC_DEL,           LGUI(KC_V),    KC_MPLY,
-                                        TG(2),         KC_LALT,         KC_LCTL,          KC_ESC,        KC_TAB,
+            KC_ESC,        KC_SPC,          LALT(KC_LSFT),    LCTL(KC_NUHS),   LALT(KC_F),       KC_LSFT,
+            KC_LSFT,       KC_LSFT,         LCTL(KC_Y),       LCTL(KC_Z),      G(S(KC_S)),       G(S(KC_T)),
+            TG(2),         KC_ENT,          LCTL(KC_V),       LCTL(KC_C),      LCTL(KC_S),       KC_LSFT,
+            KC_ESC,        LGUI(KC_V),      KC_DEL,           LCTL(KC_A),      KC_LSFT,          LCTL(KC_F),    KC_MPLY,
+                                            KC_LCTL,          KC_LALT,         KC_LCTL,          KC_ESC,        KC_LSFT,
 
         // Right half
             KC_6,       TG(2),      KC_8,       KC_9,       KC_0,       SE_PLUS,
